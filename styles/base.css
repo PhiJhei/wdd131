@@ -13,12 +13,28 @@
     box-sizing: border-box;
 }
 
+header {
+    margin: 0;
+    border: 0;
+}
+
+main {
+    margin: 0;
+    border: 0;
+}
+
+footer {
+    margin: 0;
+    border: 0;
+}
+
 body {
     font-family: var(--default-font);
     background-color: var(--accent-color);
 }
 
 #course-title {
+    font-size: larger;
     color: var(--white-color);
     background-color: var(--dark-color);
     padding: 1rem;
@@ -47,20 +63,21 @@ nav a {
     text-decoration: none;
 }
 
-@media (min-width: 640px) {
-    nav ul {
-        display: flex;
-    }
 
-    nav ul li {
-        flex: 1 0 auto;
-    }
-
-    .main-content {
-        display: flex;
-    }
-
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+nav ul li {
+    flex: 1 0 auto;
+}
+
+.main-content {
+    display: flex;
+}
+
+
 
 main h1 {
     text-align: center;
@@ -87,7 +104,8 @@ main h1 {
     border: 1px solid var(--dark-color);
 }
 
-h3 {
+h2 {
+    font-size: larger;
     border-radius: 10px 10px 0 0;
     padding: 10px;
     background-color: var(--dark-color);
@@ -119,6 +137,7 @@ h3 {
 }
 
 .address {
+    font-size: medium;
     margin-left: 5px;
     align-items: center;
     max-width: 400px;
