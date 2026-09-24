@@ -14,7 +14,7 @@ const temperature = 10;
 const windSpeed = 5;
 
 if (temperature <= 10 && windSpeed > 4.8) {
-    document.querySelector('#wind-chill').textContent = calculateWindChill(temperature, windSpeed).toFixed(1) + '°C';
+    document.querySelector('#wind-chill').textContent = calculateWindChill(temperature, windSpeed).toFixed(1);
 }
 else {
     document.querySelector('#wind-chill').textContent = 'N/A';
