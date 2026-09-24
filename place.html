@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Page</title>
+    <meta name="author" content="Jhei Salvatierra" />
+    <meta name="description" content="Country page containing population, land mass, and current weather data">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/place.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Philippines</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/tarsier_duo_large.webp" media="(min-width: 1000px)">
+                <source srcset="images/tarsier_duo_medium.webp" media="(min-width: 500px)">
+                <img src="images/tarsier_small.webp" alt="tarsier" width="360" height="472">
+            </picture>
+        </div>
+        <section id="data">
+            <h2>Data</h2>
+            <ol class="labels">
+                <li>Area:</li>
+                <li>Population: </li>
+                <li>Capital: </li>
+                <li>Languages: </li>
+                <li>Currency: </li>
+                <li>Time Zone: </li>
+                <li>Calling Code: </li>
+            </ol>
+            <ol class="values">
+                <li>300,000 sq km²</li>
+                <li>112,729,484</li>
+                <li>Manila</li>
+                <li>Tagalog, English</li>
+                <li>Philippine peso</li>
+                <li>UTC+8</li>
+                <li>+63</li>
+            </ol>
+        </section>
+        <section id="weather">
+            <div>
+                <h2>Weather <p id="emoji">🌤️</p>
+                </h2>
+                <img id="weather-icon" src="images/weather.svg" alt="cloud and sun">
+            </div>
+            <ol class="labels">
+                <li>Temperature:</li>
+                <li>Conditions:</li>
+                <li>Wind:</li>
+                <li>Wind Chill:</li>
+            </ol>
+            <ol class="values">
+                <li>10°C</li>
+                <li>Partly Cloudy</li>
+                <li>5 km/h</li>
+                <li id="wind-chill"></li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Jhei Acquin Salvatierra</p>
+        <p>Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
