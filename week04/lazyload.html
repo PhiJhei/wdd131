@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazyload Example</title>
+    <script defer src="scripts/lazyload.js"></script>
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+
+<body>
+    <!-- I relealize that I'm using the same image for every tag here. that's why lazyloading doesn't work here. -->
+    <main>
+        <h1>Lazy Load Demonstration</h1>
+        <img src="/images/tarsier_small.webp" alt="image of tarsier" loading="lazy">
+        <img src="/images/tarsier_small.webp" alt="image of tarsier" loading="lazy">
+        <img src="/images/tarsier_small.webp" alt="image of tarsier" loading="lazy">
+        <img src="/images/tarsier_small.webp" alt="image of tarsier" loading="lazy">
+        <img src="/images/tarsier_small.webp" alt="image of tarsier" loading="lazy">
+        <img src="/images/tarsier_small.webp" alt="image of tarsier" loading="lazy">
+    </main>
+</body>
+<footer>
+    <p>©<span id="currentyear"></span> Jhei Salvatierra Philippines</p>
+    <p id="lastModified"></p>
+</footer>
+
+</html>
