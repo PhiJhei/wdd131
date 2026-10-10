@@ -13,15 +13,17 @@
 </head>
 
 <body>
-    <h1>Product Review</h1>
+    <header>
+        <h1>Product Review</h1>
+    </header>
 
     <main>
         <form action="review.html" method="get">
 
             <div>
-                <label>Product Name</label><br>
-                <select id="product" name="product-name" required>
-                    <option value="" disabled selected>Choose a Product ...</option>
+                <label for="product-name">Product Name</label><br>
+                <select id="product-name" name="product-name" required>
+                    <option value="" selected>Choose a Product ...</option>
                 </select>
             </div>
 
@@ -29,24 +31,24 @@
                 <label id="overall-header" for="rating">Overall Rating</label>
 
                 <div class="rating-stars"><label for="one">☆</label><br>
-                    <input type="radio" id="one" name="rating" value="1">
+                    <input type="radio" id="one" name="rating" value="1" required>
                 </div>
 
                 <div class="rating-stars"><label for="two">☆☆</label><br>
-                    <input type="radio" id="two" name="rating" value="2">
+                    <input type="radio" id="two" name="rating" value="2" required>
                 </div>
 
                 <div class="rating-stars"><label for="three">☆☆☆</label><br>
-                    <input type="radio" id="three" name="rating" value="3">
+                    <input type="radio" id="three" name="rating" value="3" required>
                 </div>
 
                 <div class="rating-stars">
                     <label for="four">☆☆☆☆</label><br>
-                    <input type="radio" id="four" name="rating" value="4">
+                    <input type="radio" id="four" name="rating" value="4" required>
                 </div>
 
                 <div class="rating-stars"><label for="five">☆☆☆☆☆</label><br>
-                    <input type="radio" id="five" name="rating" value="5">
+                    <input type="radio" id="five" name="rating" value="5" required>
                 </div>
             </div>
 
@@ -91,10 +93,11 @@
         </form>
 
     </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Jhei Salvatierra Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
-<footer>
-    <p>©<span id="currentyear"></span> Jhei Salvatierra Philippines</p>
-    <p id="lastModified"></p>
-</footer>
+
 
 </html>

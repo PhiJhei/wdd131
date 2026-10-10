@@ -34,7 +34,7 @@ const products = [
     }
 ];
 
-const select = document.querySelector("#product");
+const select = document.querySelector("#product-name");
 
 products.forEach(product => {
     const option = document.createElement("option");
