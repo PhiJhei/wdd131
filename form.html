@@ -23,12 +23,12 @@
             <div>
                 <label for="product-name">Product Name</label><br>
                 <select id="product-name" name="product-name" required>
-                    <option value="" selected>Choose a Product ...</option>
+                    <option value="" disabled>Select a Product ...</option>
                 </select>
             </div>
 
             <div id="rating-grid">
-                <label id="overall-header" for="rating">Overall Rating</label>
+                <label id="rating" for="rating">Overall Rating</label>
 
                 <div class="rating-stars"><label for="one">☆</label><br>
                     <input type="radio" id="one" name="rating" value="1" required>
@@ -83,7 +83,7 @@
 
             <div>
                 <label for="name-field">Your Name <small>(Optional)</small></label>
-                <textarea name="name-field" id="name-field"></textarea>
+                <input type="text" name="name-field" id="name-field"></>
             </div>
 
             <div>
