@@ -1,0 +1,86 @@
+:root {
+    --dark-color: #004643;
+    --primary-color: #008080;
+    --white-color: #FFFFFF;
+    --accent-color: #F0EDE5;
+    --default-font: "Oswald", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+    border: 0;
+    width: 500px;
+    margin: 0 auto;
+    background-color: var(--accent-color)
+}
+
+main div {
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+div {
+    flex-direction: column;
+}
+
+#rating-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+#overall-header {
+    grid-column: 1/6;
+}
+
+.rating-stars {
+    text-align: center;
+}
+
+h1 {
+    border: 0;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0 10px 0;
+    color: var(--white-color);
+    background-color: var(--dark-color);
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    margin-top: 20px;
+    padding: 1rem;
+    text-align: center;
+}
+
+#features {
+    row-gap: 10px;
+}
+
+#review-field {
+    height: 100px;
+}
+
+#name-field,
+#installation-date {
+    height: 30px;
+}
+
+#product {
+    background-color: var(--white-color);
+    height: 30px;
+}
+
+select {
+    padding-left: 8px;
+}
