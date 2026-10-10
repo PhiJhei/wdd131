@@ -36,7 +36,7 @@ div {
     grid-template-columns: auto auto auto auto auto;
 }
 
-#overall-header {
+#rating {
     grid-column: 1/6;
 }
 
@@ -76,13 +76,17 @@ footer {
     height: 30px;
 }
 
-#product {
+#product-name {
     background-color: var(--white-color);
     height: 30px;
 }
 
 select {
     padding-left: 8px;
+}
+
+#submit-button {
+    height: 30px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -111,7 +115,7 @@ select {
         grid-template-columns: auto auto auto auto auto;
     }
 
-    #overall-header {
+    #rating {
         grid-column: 1/6;
     }
 
@@ -151,12 +155,16 @@ select {
         height: 30px;
     }
 
-    #product {
+    #product-name {
         background-color: var(--white-color);
         height: 30px;
     }
 
     select {
         padding-left: 8px;
+    }
+
+    #submit-button {
+        height: 30px;
     }
 }
